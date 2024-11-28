@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agus Trainer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="logo">
+            <img src="logo-placeholder.png" alt="Logo Agus Trainer">
+        </div>
+        <nav>
+            <a href="#about">Sobre mí</a>
+            <a href="#results">Resultados</a>
+            <a href="#routines">Rutinas</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </nav>
+    </header>
+
+    <!-- Sección Sobre mí -->
+    <section id="about" class="section">
+        <h1>Bienvenidos a Agus Trainer</h1>
+        <p>Información sobre Agustín (completa este espacio con su biografía, certificaciones y enfoque).</p>
+    </section>
+
+    <!-- Sección Resultados -->
+    <section id="results" class="section">
+        <h2>Resultados Obtenidos</h2>
+        <div class="results-gallery">
+            <img src="before-after1.jpg" alt="Antes y Después 1">
+            <img src="before-after2.jpg" alt="Antes y Después 2">
+            <img src="before-after3.jpg" alt="Antes y Después 3">
+        </div>
+    </section>
+
+    <!-- Sección Rutinas -->
+    <section id="routines" class="section">
+        <h2>Rutinas Personalizadas</h2>
+        <div class="routines">
+            <div class="routine">
+                <h3>Básica</h3>
+                <p>Ideal para principiantes que desean iniciar un cambio.</p>
+                <p>Precio: $15,000</p>
+                <button onclick="purchaseRoutine('Básica')">Comprar</button>
+            </div>
+            <div class="routine">
+                <h3>Intermedia</h3>
+                <p>Para quienes ya tienen experiencia y quieren mejorar.</p>
+                <p>Precio: $20,000</p>
+                <button onclick="purchaseRoutine('Intermedia')">Comprar</button>
+            </div>
+            <div class="routine">
+                <h3>Avanzada</h3>
+                <p>Para deportistas que buscan el máximo rendimiento.</p>
+                <p>Precio: $30,000</p>
+                <button onclick="purchaseRoutine('Avanzada')">Comprar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Formulario -->
+    <section id="contact" class="section">
+        <h2>Contáctame</h2>
+        <form id="contactForm">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="lastname">Apellido:</label>
+            <input type="text" id="lastname" name="lastname" required>
+            <label for="whatsapp">WhatsApp:</label>
+            <input type="tel" id="whatsapp" name="whatsapp" required>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
